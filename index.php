@@ -4,7 +4,7 @@ define('API', 'https://api.telegram.org/bot'.TOKEN.'/');
 
 $data = json_decode(file_get_contents('php://input'));
 
-switch (variable) {
+switch ($data->message->text) {
 	case '/start':
 		$result = file_get_contents(API.'sendMessage?'.http_build_query([
 			'chat_id' => $data->message->chat->id,
