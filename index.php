@@ -20,4 +20,4 @@ switch ($data->message->text) {
 		break;
 }
 
-print_r($result);
+// print_r($result);
